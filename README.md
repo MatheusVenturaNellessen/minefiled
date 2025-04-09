@@ -11,16 +11,6 @@
 
 <hr>
 
-<h2>Estrutura do projeto</h2>
-<pre>
-MINEFIELD-PROGRAM/
-├── campo-minado.c            # Código-fonte principal
-└── campo_minado.cbp          # Arquivo do projeto (Code::Blocks)
-</pre>
-<span>Outros arquivos foram omitidos por não serem essenciais para o entendimento da estrutura do projeto.</span>
-
-<hr>
-
 <h2>Funcionalidades</h2>
 <ul>
   <li>O programa gera uma matriz 10 po 10 de números (0 ou 1) aleatoriamente. O número 1 é configurado como bomba e o número 0 é configurado como espaço livre.
@@ -40,14 +30,14 @@ MINEFIELD-PROGRAM/
 
 <h2>Demonstração do programa</h2>
 <div align="center">
-  <img src="./demonstration.gif" alt="Imagem animada de demonstração do programa" width="800px">
+  <img src="./img/demonstration.gif" alt="Imagem animada de demonstração do programa" width="800px">
 </div>
 
 <hr>
 
 <h2>Depedências</h2>
 <ul>
-  <li>Compilador GCC ou Code::Blocks.
+  <li>Compilador GCC.
   <li>Bibliotecas:
     <ul>
       <li>stdio.h
@@ -62,18 +52,6 @@ MINEFIELD-PROGRAM/
 
 <h2>Como rodar o projeto</h2>
 <ul>
-  <li><strong>Pelo Code::Blocks</strong>:
-  <ol>
-    <li>Navegue até o diretório pretendido:      
-    <pre><code>cd caminho\do\diretorio</code></pre>
-    <li>No diretório escolhido, clone o repositório:
-    <pre><code>git clone https://github.com/MatheusVenturaNellessen/minefield-program.git</code></pre>
-    <li>Abra o Code::Blocks.
-    <li>Vá em <strong>File > Open</strong> e selecione o arquivo <strong>campo_minado.cbp</strong>.
-    <li>Clique em <strong>Build and Run</strong> para compilar e executar o jogo.
-  </ol>
-  <br>
-  <li><strong>Pelo Terminal</strong>:</li>
     <ol>
       <li>Instale o compilador GCC:
         <ul>
@@ -104,7 +82,7 @@ sudo apt install build-essential</code></pre>
       <li>No diretório escolhido, clone o repositório:
         <pre><code>git clone https://github.com/MatheusVenturaNellessen/minefield.git</code></pre>
       <li>Compile o código com GCC:
-        <pre><code>gcc campo-minado.c -o campo-minado</code></pre>
+        <pre><code>gcc campo_minado.c -o campo_minado</code></pre>
       <li>Execute o programa compilado:
        <ul>
          <li>Windows:
@@ -113,16 +91,6 @@ sudo apt install build-essential</code></pre>
           <pre><code>./campo_minado</code></pre>
       </ul>
 </ul>
-
-<hr>
-
-<h2>Problemas encontrados</h2>
-<ol>
-  <li>Erro no compilador do Code::Blocks.
-    <ul>
-      <li></strong>Solução</strong>: Com a IDE aberta, clique em <strong>Settings > Compiler</strong>, irá abrir um menu, em <strong>Global compiler settings</strong> em <strong>Select compiler</strong> selecione a opção <strong>GNU GCC Compiler</strong> (caso não esteja), após clique em <strong>Reset defaults > Sim > Sim > Ok</strong>.
-    </ul>
-</ol>
 
 <hr>
 
